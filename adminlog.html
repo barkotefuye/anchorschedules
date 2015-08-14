@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<!--<title>Anchor</title>-->
+		<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+		<script src="tabletop.js"></script>
+		<script>
+		function init() {
+   	 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1ZPT9blVcjkEgDlE4XjaxBNN2hUVzVpuxTTOOcqNo1qg/pubhtml',
+                     callback: getInfo,
+                     simpleSheet: true } );
+ 	 }
+
+  	function getInfo(data, tabletop) {
+  		var ps= document.getElementById("password1").value;
+ 		var un = document.getElementById("username").value;
+ 		var btn = document.getElementById("btn");
+ 		var err = document.getElementById("error");
+  		var i = 0;
+  		var j = true;
+  		for(i=0; i<data.length-1; i++){
+  			if(un == data[i].username && ps === data[i].password){
+  				//btn.link("page2.html");
+  				return true;
+  			}
+  			else{
+  				var j = false;
+  			}
+		}
+		if (i == data.length-1 && j == false){
+			err.innerHTML = "incorrect username and password, please try again";
+			err.style.fontSize = "50%";
+			err.style.color="red";
+			ps.style.borderColor = "red";
+			un.style.borderColor = "red";
+		}
+	}
+	</script>
+		<style>
+			body{
+				font-family: 'Headland One', serif;
+			}
+			#title{
+				font-family: 'Economica', sans-serif;
+				margin:0px;
+				color:#1a0dab;
+
+			}
+			#main {
+				font-size:130%;
+  				position: relative;
+  				top: 50%;
+  				transform: translateY(-90%);
+  				/*
+  				written by Sebastian Ekström
+  				from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+  				*/
+			}
+			ul{
+				margin-top: 0px;
+				padding: 0px;
+				border-bottom-width: 3px;;
+				border-bottom-style: solid;
+				border-bottom-color: #1a0dab;
+			}
+			li{
+				list-style-type: none;
+				display: inline-block;
+				padding-right: 10px;
+			}
+			input{
+				padding-left: 5px;
+				height:30px;
+				border-radius: 5px;
+				border-color:#000;
+				border-style:solid;
+			}
+			button{
+				font-family: 'Headland One', serif;
+				background-color: white;
+				border-color: #1a0dab;
+				border-radius: 2px;
+				color:#1a0dab;
+				font-size:70%;
+				padding:3px;
+			}
+			#box{
+				border-width: 5px;
+				border-radius: 5px;
+				border-color:#000;
+				border-style: solid;
+				width:30%;
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			#btn{
+				padding-right: 10px;
+			}
+			#t{
+				color:#1a0dab;
+			}
+		</style>
+	</head>
+<body>
+	<ul>
+		<li><img src="anchorschedules.svg" height="50" width="50"/><li>
+		<li><h1 id ="title">Anchor</h1></li>
+	</ul>
+    <div id="main">
+		<center>
+			<h1 id="t">Administrator</h1>
+		<div id="box">
+			Username: <input id ="username" type="text" value= "" placeholder="Enter your email"/>
+			<br><br>
+			Password: <input id = "password1" type="password" value="" placeholder="Enter your password"/>
+			<p id="error"></p>
+			<br>
+			<span id="btn"><button type="button" >Create an Account</button></span>
+			<span id="btn"><button type="button" onclick="init()">Login In</button></span>
+		</div>
+		</center>
+	</div>
+</body>
+</html>
