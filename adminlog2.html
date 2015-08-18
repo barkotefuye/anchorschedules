@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<!--<title>Anchor</title>-->
+		<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+		<script src="tabletop.js"></script>
+		<script src ="studentlog.js">
+
+		/*function init() {
+   	 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1WA1WIo7ikwuO6VLVyQIzhngsI4RtKMBLo8gtbEispi0/pubhtml',
+                     callback: getInfo,
+                     simpleSheet: true } );
+ 	 }
+
+  	function getInfo(data, tabletop) {
+  		var ps= document.getElementById("password1").value;
+ 		var un = document.getElementById("usernm").value;
+ 		var btn = document.getElementById("btn");
+ 		var err = document.getElementById("error");
+  		var i = 0;
+  		var j = true;
+
+  		for(i=0; i<data.length-1; i++){
+  			if(un == data[i].username && ps ==  data[i].password){
+  				window.location.assign("studentschedule2.html");
+  				return true;
+  			}
+  			else{
+  				var j = false;
+  			}
+		}
+		if (i == data.length-1 && j == false){
+			err.innerHTML = "incorrect username and password, please try again";
+			err.style.fontSize = "50%";
+			err.style.color="red";
+			//ps.style.borderColor = "red";
+			//un.style.borderColor = "red";
+		}
+	}
+	</script>
+		<style>
+			body{
+				font-family: 'Headland One', serif;
+				margin:0px;
+				background-color: #5f78aa;
+
+			}
+			.title{
+				font-family: 'Economica', sans-serif;
+				margin:0px;
+				color:#1a0dab;
+
+			}
+			#main {
+				font-size:130%;
+  				position: relative;
+  				top: 50%;
+  				transform: translateY(-90%);
+  				/*
+  				written by Sebastian Ekström
+  				from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+  				*/
+			}
+			#ulborder{
+    		position: relative;
+    		z-index:-1;
+    		width: 100%;
+    		height:-75px;
+    		background: white;
+    		/*border-top: 2px solid white;*/
+    		/*padding-top: 10px;*/
+			}
+			#ulborder:before{
+    		position: absolute;
+    		content: '';
+		    top: 0px;
+		    height: 8px;
+		    width: 100%;
+		    background-size: 12px 12px;
+		    /*border-bottom: 2px solid #1a0dab;*/
+		    background-position: -5px -3px;
+		    background-image: -webkit-radial-gradient(50% 0%, circle, white 50%, #5f78aa 51%);
+		    background-image: -moz-radial-gradient(50% 0%, circle, white 50%, #5f78aa 51%);
+		    background-image: radial-gradient(circle at 50% 0%, white 50%, #5f78aa 51%);
+		}
+			ul{
+				/*margin-top: 7px;*/
+				margin-bottom: 0px;
+				padding-top: 7px;
+				padding-bottom:7px;
+    			position: relative;
+				background-color: white;
+				/*#66ac54;
+    			border-bottom: 3px solid #1a0dab;*/
+			}
+			li{
+				list-style-type: none;
+				display: inline-block;
+				padding-right: 10px;
+				padding-left: 3px;
+
+			}
+			.title{
+				list-style-type: none;
+				display: inline-block;
+				padding-right: 10px;
+			}
+			input{
+				padding-left: 5px;
+				height:30px;
+				border-radius: 5px;
+				border-color:#000;
+				border-style:solid;
+			}
+			button{
+				font-family: 'Headland One', serif;
+				background-color: white;
+				border-color: #1a0dab;
+				border-radius: 2px;
+				color:#1a0dab;
+				font-size:70%;
+				padding:3px;
+			}
+			#box{
+				/*border-width: 5px;
+				border-radius: 5px;
+				border-color:#000;
+				border-style: solid;*/
+				width:30%;
+				float:right;
+				/*background-color: white;
+				opacity: .7;*/
+					position: relative;
+  				top: 50%;
+  				transform: translateY(-75%);
+  				/*
+  				written by Sebastian Ekström
+  				from http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+  				*/
+			}
+			#btn{
+				padding-right: 10px;
+			}
+			#t{
+				color:white;
+			}
+
+		</style>
+	</head>
+<body>
+	<ul>
+		<li><img class ="title" src="anchorschedules.svg" height="50" width="50"/><li>
+		<li><h1 class ="title">Anchor</h1></li>
+	</ul>
+	<div id ="ulborder" width ="100%"></div>
+    <div id="main">
+		<div style="padding-left:30px;">
+
+		<div id="box" style="padding-left:80px;">
+			<h1 id="t">Adminstrator</h1>
+			Username: <input id ="usernm" type="text" value = "" placeholder="Enter your username"/>
+			<br><br>
+			Password: <input id = "password1" type="password"  value ="" placeholder="Enter your password"/>
+			<p id="error"></p>
+			<br>
+			<div style="padding-left:120px;">
+			<span id="btn"><button type="button" onclick="init()">Login In</button></span>
+			<div></div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

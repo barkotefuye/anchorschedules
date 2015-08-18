@@ -1,0 +1,562 @@
+{
+  "0": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Visual Arts",
+    "Length":"semester",
+    "Type":"Art Elective"
+  },
+  "1": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Drawing/Painting 1",
+    "Length":"yearlong",
+    "Type":"Art Elective"
+  },
+  "2": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Drawing/Painting 2",
+    "Length":"semester",
+    "Type":"Art Elective"
+  },
+  "3": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Ceramics 1",
+    "Length":"semester",
+    "Type":"Art Elective"
+  },
+  "4": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Ceramics 2",
+    "Length":"semester",
+    "Type":"Art Elective"
+  },
+  "5": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB SL Art 1, 2",
+    "Length":"yearlong",
+    "Type":"Art Elective"
+  },
+  "6": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB HL Art 1, 2",
+    "Length":"yearlong",
+    "Type":"Art Elective"
+  },
+  "7": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Intro to Business",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "8": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Marketing 1",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "9": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Marketing 2",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "10": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Web Design 1",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "11": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Communications",
+    "Length":"semester",
+    "Type":"Business and Technology Elective or Language Arts Elective"
+  },
+  "12": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Sports/Entertainment Marketing",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "13": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Microsoft Academy (Word & Excel)",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "14": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Microsoft Academy (Powerpoint & Access)",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "15": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Photography 1",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "16": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Photography 2",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "17": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Wood Technology",
+    "Length":"semester",
+    "Type":"Business and Technology Elective"
+  },
+  "18": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Career Choices/ Work Based Learning",
+    "Length":"yearlong",
+    "Type":"Business and Technology Elective"
+  },
+  "19": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Engineering Design",
+    "Length":"yearlong",
+    "Type":"Business and Technology Elective"
+  },
+  "20": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Retail Management",
+    "Length":"yearlong",
+    "Type":"Business and Technology Elective"
+  },
+  "21": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Exploring Computer Science",
+    "Length":"yearlong",
+    "Type":"Business and Technology Elective"
+  },
+  "22": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB Business and Management",
+    "Length":"yearlong",
+    "Type":"Business and Technology Elective"
+  },
+  "23": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Yearbook",
+    "Length":"yearlong",
+    "Type":"Business and Technology Elective"
+  },
+  "24": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Independent Living",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "25": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Family Psychology",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "26": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Exploring Childhood 1",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "27": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Exploring Childhood 2",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "28": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Nutrition and Wellness",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "29": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Intro to Culinary Arts",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "30": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Sports Med",
+    "Length":"semester",
+    "Type":"Family and Consumer Sciences Elective"
+  },
+  "31": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Health Education",
+    "Length":"semester",
+    "Type":"Health/P.E Elective"
+  },
+  "32": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Fitness Conditioning",
+    "Length":"semester",
+    "Type":"Health/P.E Elective"
+  },
+  "33": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Fitness Foundations",
+    "Length":"semester",
+    "Type":"Health/P.E Elective"
+  },
+  "34": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Weight Training 1",
+    "Length":"semester",
+    "Type":"Health/P.E Elective"
+  },
+  "35": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Weight Training 2",
+    "Length":"semester",
+    "Type":"Health/P.E Elective"
+  },
+  "36": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Yoga Fitness",
+    "Length":"semester",
+    "Type":"Health/P.E Elective"
+  },
+  "37": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Creative Writing",
+    "Length":"semester",
+    "Type":"Language Arts Elective"
+  },
+  "38": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Algebra 1",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "39": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Algebra 2/ IB Math Studies 1, 2",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "40": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Geometry",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "41": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Geometry Applications",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "42": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Applied Math",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "43": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB SL Math 1,2",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "44": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB HL Math 3,4",
+    "Length":"yearlong",
+    "Type":"math"
+  },
+  "45": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Algebra Essentials",
+    "Length":"yearlong",
+    "Type":"Math Elective"
+  },
+  "46": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Geometry Essentials",
+    "Length":"yearlong",
+    "Type":"Math Elective"
+  },
+  "47": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Symphonic Band",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "48": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Wind Ensemble",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "49": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Jazz Ensemble",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "50": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Drumline",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "51": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Orchestra",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "52": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Beginning Choir",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "53": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Concert Choir",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "54": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Vocal Ensemble",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "55": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB Music - Instrumental",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "56": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB Music - Choral",
+    "Length":"yearlong",
+    "Type":"Music Elective"
+  },
+  "57": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Chemestry",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "58": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Physics",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "59": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB SL Biology 1, 2",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "60": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB HL Biology 1, 2",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "61": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB SL Physics 1, 2",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "62": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB HL Physics 1, 2",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "63": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB SL Chemistry 1, 2",
+    "Length":"yearlong",
+    "Type":"Science"
+  },
+  "64": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Sociology",
+    "Length":"semester",
+    "Type":"Social Studies Elective"
+  },
+  "65": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Economics",
+    "Length":"semester",
+    "Type":"Social Studies Elective"
+  },
+  "66": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Contemp. World Issues",
+    "Length":"semester",
+    "Type":"Social Studies Elective"
+  },
+  "67": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Psychology",
+    "Length":"semester",
+    "Type":"Social Studies Elective"
+  },
+  "68": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"IB Theory of Knowledge",
+    "Length":"yearlong",
+    "Type":"Social Studies Elective"
+  },
+  "69": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Spanish 1",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "70": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Spanish 2",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "71": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Spanish 3",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "72": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Spanish 4, 5, 6",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "73": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"French 1",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "74": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"French 2",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "75": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"French 3",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "76": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"French 4, 5",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "77": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Spanish for Spanish Speakers 1",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "78": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Spanish for Spanish Speakers 2",
+    "Length":"yearlong",
+    "Type":"World Language Elective"
+  },
+  "79": {
+    "School":"Mount Rainer",
+    "Grade":11,
+    "Classes":"Leadership",
+    "Length":"semester or yearlong",
+    "Type":"Elective"
+  }
+}

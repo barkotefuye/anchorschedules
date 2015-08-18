@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--SHIFT PX TO % SO IT WILL SHIFT WITH PAGE SIZE-->
+
+<!--brings in css file, and to-be links of sid's databases-->
+<!--everything is from w3schools-->
+<script src='Tabletop.js'></script>
+<link type="text/css" rel="stylesheet" href="page2.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--brings in tables for amount of data requested-->
+<script type="text/javascript"> 
+  function init() {
+   	 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1hzutCdayAu7Y0WcAQl97gbV0s3miCM2X3hSSGBuc8HY/pubhtml',
+                     callback: getInfo,
+                     simpleSheet: true } );
+ 	 }
+    function createBox(subject){
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(-1);  
+        var x = row.insertCell(subject);
+        x.innerHTML = "hey";
+        }
+
+  	function getInfo(data, tabletop) {
+      console.log(data);
+        for( i= 0;i< data.length-1; i++){
+          if (data[i].type == "math"){
+              createBox(0);
+
+          }
+        }
+	   }
+ 	init()
+		</script>
+
+<style>
+/*our background color*/
+body {
+    background-color: #eff2fa;
+}
+p {text-align: center;
+}
+/*our schedule dropper table*/ 
+.div1 { 
+    width:90px;
+    height: 70px;
+    float: right;
+    margin: 2px;
+    border:1px solid #000000;
+}
+/*our class holder table*/
+.box {
+    width:80px;  
+    height:60px;
+    border:1px solid #000000;
+}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+                                          
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Grade
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+<!--these are our lists and nested lists for the dropdown menue-->
+      <li><a href="#">9th</a></li>
+      <li><a href="#">10th</a></li>
+      <li><a href="#">11th</a></li>
+      <li><a href="#">12th</a></li>
+    </ul>
+    
+  </div>
+</div>
+<!--<div id="schedule">-->
+    <h1>Schedule</h1>
+<!--this creates the schedule boxes-->
+    <span style="width:50%">
+    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </span>
+</div>
+<h5>Drag and drop your classes</h5>
+<table style="width:50%" id="myTable">
+ <!--these are the labels for our class table-->
+  <tr>
+    <th>Engish</th>
+    <th>Humanities</th>
+    <th>Elective</th>
+    <th>Elective</th>
+    <th>Science</th>
+    <th>Math</th>
+  </tr>
+  <!--this creates the classes boxes-->
+  <!--we need to link this somehow to sid's databases-->
+  <tr>
+    <td valign="middle" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"><p draggable="true" ondragstart="drag(event)" id="drag1">Humanities</p></td>
+    <td valign="middle" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"><p draggable="true" ondragstart="drag(event)" id="drag2">Elective</p></td>
+    <td valign="middle" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"><p draggable="true" ondragstart="drag(event)" id="drag3">Elective</p></td>
+    <td valign="middle" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"><p draggable="true" ondragstart="drag(event)" id="drag4">PE</p></td>
+    <td valign="middle" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"><p draggable="true" ondragstart="drag(event)" id="drag5">APUSH</p></td>
+    <td valign="middle" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"><p draggable="true" ondragstart="drag(event)" id="drag6"></p></td>
+  </tr>
+</table>
+
+</body>
+</html>
+    

@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+		<script src= "tabletop.js"></script>
+			<script type="text/javascript">
+  function init() {
+   	 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1WA1WIo7ikwuO6VLVyQIzhngsI4RtKMBLo8gtbEispi0/pubhtml',
+                     callback: getInfo,
+                     simpleSheet: true } );
+   	 	console.log(fn + "" + ln + "" + ps + "" + un);
+ 	 }
+ 	
+		</script>
+		<style>
+		body{
+			font-family: 'Headland One', serif;
+			margin: 0px;
+			background-image: url("background.jpg");
+			color:white;
+		}
+		ul{
+
+							/*used color zilla chrome extension*/
+				background: -webkit-linear-gradient(top, #4c4c4c 0%,#666666 3%,#666666 3%,#666666 6%,#1c1c1c 55%,#131313 100%); /* Chrome10+,Safari5.1+ */
+				/*margin-top: 7px;*/
+				padding-bottom: 2px;
+				padding-top: 2px;
+				/*margin-top: 0px;
+				padding: 0px;
+				border-bottom-width: 3px;;
+				border-bottom-style: solid;
+				border-bottom-color: #1a0dab;*/
+			}
+			li{
+				list-style-type: none;
+				display: inline-block;
+				padding-right: 10px;
+			}
+			button{
+				font-family: 'Headland One', serif;
+				font-size: 100%;
+				background-color:#1a0dab;
+				border-color: #1a0dab;
+				color:white;
+			}
+			#title{
+				font-family: 'Economica', sans-serif;
+				color:white;
+			}
+			#center{
+				font-size:130%;
+				position: relative;
+  				top: 50%;
+  				transform: translateY(40%);
+			}
+			input,select{
+				padding-left: 5px;
+				height:30px;
+				border-radius: 5px;
+				border-color:#555;
+				border-style:solid;
+			}
+		</style>
+	</head>
+
+<body>
+	<ul>
+		<li><img src="anchorschedules.svg" height="50" width="50"/><li>
+		<li><h1 id ="title">Anchor</h1></li>
+	</ul>
+
+	<center>
+	<div id="center">
+	<h1>Adminstrator Sign Up</h1>
+	
+	<br><br>
+
+
+
+<!-- makes a drop-down list of high schools-->
+Choose your school:<select>
+  <option value="random">Schools</option>
+  <option value="Mt.Rainier High School">Mt.Rainier High School</option>
+  <option value="Highline High School">Highline High School</option>
+  <option value="Todd Beamer High School">Todd Beamer High School</option>
+</select>
+<p>
+<!-- first name, last name, username, and password -->
+First Name: <input id="firstname" type="text" placeholder="Enter your first name"/>
+Last Name: <input id="lastname" type="text" placeholder="Enter your last name"/><p><p>
+Username: <input id="username" type="text" placeholder="Enter your username"/>
+<p></p>
+Password: <input id="password" type="text" placeholder="Enter your password"/>
+
+
+	<br><br><br>
+   <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+    <script type="text/javascript" src="loginstudentjs.js"></script> 
+    <button type="button" onclick="addUser();">Sign Up</button>
+</div>
+</center>
+</body>
+</html>

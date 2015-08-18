@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
+  var schedule = getElementById();
+  </script>
+<style>
+    #submit{
+      float: right;
+      }
+      body{
+        font-family: 'Headland One', serif;
+        margin:0px;
+        background-color: #5f78aa;
+        font-family: 'Headland One', serif;
+
+      }
+       /* #ulborder{
+        position: relative;
+        z-index:-1;
+        width: 100%;
+        height:-75px;
+        background: white;
+        /*border-top: 2px solid white;*/
+        /*padding-top: 10px;
+      }
+      #ulborder:before{
+        position: absolute;
+        content: '';
+        top: 0px;
+        height: 8px;
+        width: 100%;
+        background-size: 12px 12px;
+        /*border-bottom: 2px solid #1a0dab;*
+        background-position: -5px -3px;
+        background-image: -webkit-radial-gradient(50% 0%, circle, white 50%, #5f78aa 51%);
+        background-image: -moz-radial-gradient(50% 0%, circle, white 50%, #5f78aa 51%);
+        background-image: radial-gradient(circle at 50% 0%, white 50%, #5f78aa 51%);
+    }*/
+      #ul{
+        /*margin-top: 7px;*/
+        margin-bottom: 0px;
+        padding-top: 7px;
+        padding-bottom:7px;
+        position: relative;
+        background-color: white;
+        /*#66ac54;
+          border-bottom: 3px solid #1a0dab;*/
+      }
+      li{
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 3px;
+
+      }
+      #class1{
+      background-color:white;
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-left: 10px;
+      display: block;
+      }
+      #class2{
+      background-color:#d5d5d5;
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-left: 10px;
+      display:block;
+      }
+      .list{
+      float:right;
+      width:40%;
+      padding-right:60px;
+      }
+      .nav{
+        float:right;
+        padding-right:20px;
+      }
+</style>
+</head>
+
+  
+  
+<body>
+  <ul id="ul">
+    <li><img class ="title" src="anchorschedules.svg" height="50" width="50"/><li>
+    <li><h1 class ="title">Anchor</h1></li>
+    <li class ="nav"> Access Classroom Database</li>
+    <li class="nav"> Access Student Login's and Passwords</li>
+  </ul>
+  <div id ="ulborder" width ="100%"></div>
+  <br>
+<!--<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="#">Anchor</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- this is the drop-down menu for schools 
+        <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Schools<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mt.Rainier High School</a></li>
+            <li><a href="#">Highline High School</a></li>
+            <li><a href="#">Todd Beamer High School</a></li>
+          </ul>
+        </li>
+        </ul>
+        <!-- this is the drop-down menu for notifications 
+        <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notifications<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><a href = "antoneeschedule.html">Antonee Harrell</a></a></li>
+            <li><a href="#">Jessica Paz Mejia</a></li>
+            <li><a href="#">Kristina Kolibab</a></li>
+          </ul>
+        </li>
+        </ul>
+        <li><a href="#"><a href="page1.html"><span class="glyphicon glyphicon-log-out"></span>Sign Out</a></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>-->
+<!-- box with school schedule -->
+<div  style="width:45%; float:left; margin-left:200px;">
+  <div>
+    <div class="row">
+    <h1>School Schedule</h1>
+   
+
+<textarea id="class" rows="4" cols="50">
+</textarea>
+
+<textarea id="class" rows="4" cols="50">
+</textarea>
+
+<textarea id="class" rows="4" cols="50">
+</textarea>
+
+<textarea id="class" rows="4" cols="50">
+</textarea>
+
+<textarea id="class" rows="4" cols="50">
+</textarea>
+
+<textarea id="class" rows="4" cols="50">
+</textarea>
+  </div>
+</div>
+    </div>
+
+<!-- box with student preferred schedule -->
+  <h1>Student Preferred Schedule</h1>
+<ul class = "list">
+<li id="class1">item #1</li>
+
+<li id="class2">item #2</li>
+
+<li id="class1">item #3</li>
+
+<li id="class2">item #4</li>
+
+<li id="class1">item #5</li>
+
+<li id="class2">item #6</li>
+</ul>
+
+<!-- box with admin comment -->
+<div>
+  <h2>Comments:</h2>
+  <form role="form">
+ 
+      <textarea class="form-control" rows="5" id="comment" style="width:20%; height:100px; float:left;"></textarea>
+  </form>
+</div>
+
+
+<!--this is the Submit button-->
+<div class="container">
+  <a href = "page1.html"><input id="submit" onclick="myFunction()" type="submit" class="btn btn-info btn-lg" value="Submit"></a>
+  <script>
+    function myFunction() {
+    alert("Successfully Submited!");
+    }
+</script>
+
+</div>
+<p></p><p></p><p></p><p></p><p></p>
+
+
+
+
+
+</body>
+</html>

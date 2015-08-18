@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Headland+One' rel='stylesheet' type='text/css'>
+<!--SHIFT PX TO % SO IT WILL SHIFT WITH PAGE SIZE-->
+
+<!--brings in css file, and to-be links of sid's databases-->
+<!--everything is from w3schools-->
+<script src='tabletop.js'></script>
+<link type="text/css" rel="stylesheet" href="page2.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--brings in tables for amount of data requested-->
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src = "studentlog.js"></script>
+<script type="text/javascript">
+  var sn= document.getElementById("studentname");
+  init();
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+    //var para = document.createElement("p");
+    //console.log(ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+    console.log(document.getElementById(data));
+} 
+// these three drag and drop functions are from W3 schools, but have been modified to suite user interactivness.
+  function init() {
+   	 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1hzutCdayAu7Y0WcAQl97gbV0s3miCM2X3hSSGBuc8HY/pubhtml',
+                     callback: getInfo,
+                     simpleSheet: true } );
+ 	 }
+    function getInfo(data, tabletop) {
+
+      //console.log(data);
+      var table =document.getElementById("myTable");
+      //the code below inserts a row at the end of list(1), then adds a cell at the first postion(2), then inserts another cell right after that(3)twice, then we assign all the cells classname, so that they're layout will change, due to CSS of the classname(4), then the next two lines are supposed to make the cells at the first postion, or first colum, boxes that you can drag into, but its not working, so fixing this part will result in boxes you can drag into (5), and "box.innerhtml" changes whats inside of the box, in our case we are adding the classes to box, the cells in the first spot of each row, and then the length, and type.(6)
+      for(i=0; i<data.length-1; i++){
+            //console.log(data[i].Classes);
+            var row = table.insertRow(-1); //(1)
+            var box = row.insertCell(0);//(2)
+            var box1 = row.insertCell(-1);//(3)
+            var box2 = row.insertCell(-1);//(3)
+            //box.valign = "middle";
+            box.className = "div1";//(4)
+            box1.className = "div1";
+            box2.className = "div1";
+            box.ondrop = "drop(event)";//(5) 
+            box.ondragover= "allowDrop(event)";
+
+            box.innerHTML = "<p draggable='true' ondragstart='drag(event)' style = 'padding:3px;' id='drag" + i + "'>"+ data[i].Classes +"</p>";//(6)
+            box1.innerHTML = "<p>"+ data[i].Length +"</p>";
+             box2.innerHTML = "<p>"+ data[i].Type +"</p>";
+            //console.log(data[i].Classes);
+      }
+  }
+  // function is called when submit button is clicked using onclick attribute
+  function logOut(){
+    alert("Succesfully Submitted! To log out, click OK.");
+    window.location.assign("index.html");
+  }
+ 	
+		</script>
+
+<style>
+/*our background color*/
+body {
+    font-family: 'Headland One', serif;
+    background-color: #eff2fa;
+}
+p {
+  text-align: center;
+}
+/*our schedule dropper table*/ 
+.div1 { 
+    width:100px;
+    height: 70px;
+    /*float: right;*/
+    margin: 5px;
+    border:1px solid #1a0dab;
+}
+.btn {
+    background-color: #1a0dab;
+}
+/*our class holder table*/
+.box {
+    width:80px;  
+    height:60px;
+    border:2px solid #1a0dab;
+}
+#title{
+  color:white;
+}
+ul{   
+    /*used color zilla chrome extension*/
+    background: -webkit-linear-gradient(top, #4c4c4c 0%,#666666 3%,#666666 3%,#666666 6%,#1c1c1c 55%,#131313 100%); /* Chrome10+,Safari5.1+ */
+        /*margin-top: 7px;*/
+        margin-top: 0px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-family: 'Economica', sans-serif;
+    color:white;
+ /* list-style-type: none;
+        width: 100%;
+        font-family: 'Economica', sans-serif;
+        margin-top: 0px;
+        padding: 0px;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: #1a0dab;*/
+      }
+      li{
+        list-style-type: none;
+        display: inline-block;
+        padding-right:10px;
+        color:#1a0dab;
+      }
+button{
+  font-family: 'Headland One', serif;
+  background-color:#1a0dab;
+  border-color: #1a0dab;
+  border-radius: 2px;
+  color:white;
+  font-size:100%;
+  padding:3px;
+  margin-bottom: 30px;
+   }
+#myTable{
+
+}
+#studentname{
+  float:right;
+  font-family: 'Headland One', serif;
+}
+.dropdown-menu{
+  width:10%;
+}
+.li{
+  font-size:100%;
+  color:#000;
+}
+.li:hover{
+
+  color:#1a0dab;
+}
+</style>
+<!--<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>-->
+</head>
+<body>
+
+<!--this is the anchor title and picture-->
+<ul>
+    <li><img src="anchorschedules.svg" height="50" width="50"/><li>
+    <li><h1 id ="title">Anchor</h1></li>
+    <li id="studentname">Student</li>
+</ul>
+
+
+<div class="container">
+                                          
+  <!--<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Grade
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+<!--these are our lists and nested lists for the dropdown menue-->
+      <!--<li class="li">9th</li>
+      <li class ="li">10th</li>
+      <li class ="li">11th</li>
+      <li class ="li">12th</li>
+    </ul>
+    
+  </div>-->
+</div>
+<center>
+<div id="schedule" style="padding-bottom: 30px;">
+    <h1>Schedule</h1>
+    <h5><br><br>Drag and drop your classes</h5>
+<!--this creates the schedule boxes-->
+   
+    <table>
+        <tr>
+            <th class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></th>
+            <th class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></th>
+            <th class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></th>
+            <th class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></th>
+            <th class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></th>
+            <th class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></th>
+        </tr>
+<!--   this is a box you drag stuff into, there is two things that make it like that, the ondrop attribute and ondragover method, if you can set these equal to drop(event) and allowDrop(event) in javascript, you will be able to make classes draggable <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+
+    </table>
+
+</div>
+
+<table style="width:50%;" id="myTable">
+ <!--these are the labels for our class table-->
+  <tr>
+    <th>Classes</th>
+    <th>Length</th>
+    <th>Type</th>
+  </tr>
+  <!--this creates the classes boxes-->
+  <!--we need to link this somehow to sid's databases-->
+</table>
+<button style="margin-top:10px;" onclick="logOut()">Submit</button>
+</body>
+</html>
+    
